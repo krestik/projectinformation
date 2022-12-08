@@ -1,0 +1,387 @@
+<DOCTYPE html>
+<html>
+ <head>
+
+  <meta charset="utf-8" />
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+  <title>МБОУ Школа N1</title>
+  <style>
+  
+  
+
+   body {
+
+    background: url(images/1.jpg); 
+	}
+	@font-face {
+    font-family: Beautiful; /* Гарнитура шрифта */
+    src: url(fonts/beautiful.ttf); /* Путь к файлу со шрифтом */
+	 
+   }
+   @font-face {
+   font-family: Inter-Bold;
+	src: url(fonts/Inter-Bold.otf);
+	}
+  
+	
+	
+   h1 {
+    font-family: Beautiful;
+	top:8;
+    margin-left:20px;
+   }
+   
+   h2 {
+   position: center;
+    font-family: Beautiful;
+	margin-left: 200px;
+	top: 50%;
+   }
+   h3 {
+   
+    font-family: Beautiful;
+	margin-left: 200px;
+	top: 50%;
+   }
+   h4 {
+   
+    font-family: Beautiful;
+	margin-left: 200px;
+	top: 50%;
+   }
+   
+#preloader_malc {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, .6);
+		z-index: 99
+	}
+
+	#preloader_malc div {
+		background: #fff;
+		width: 260px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 8px;
+		font-family: arial;
+		font-size: 15px;
+		color: #111;
+		text-align: center;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto
+	}
+
+
+  #vk_groups{
+  height: 638px;
+  width: 300px;
+  }
+  
+  .news {
+  
+  height:641px;
+  width:300px;
+  border:1px solid black;
+  }
+  .photo { 
+  display: table-header-group;
+  
+  height:171px;
+  width:710px;
+  border:1px solid black;
+  position:absolute;
+  top:8;
+  margin-left:310px;
+ 
+
+  }
+  .name {
+  height:85px;
+  width:710px;
+  border:1px solid black;
+  position:absolute;
+  top:184;
+  margin-left:310px;
+  }
+  
+  .history {
+  height:374px;
+  width:710px;
+  border:1px solid black;
+  position:absolute;
+  top:275;
+  margin-left:310px;
+  font-family: Inter-Bold;
+  font-size: 11pt;
+  }
+  
+  .other {
+  margin-left:1029px;
+  height:641px;
+  width:300px;
+  border:1px solid black;
+  position:absolute;
+  top:8;
+  }
+  .director {
+  
+  height:310px;
+  width:300px;
+  border:1px solid black;
+  position:absolute;
+  
+  cursor: pointer;
+  }
+  
+   .director_photo {
+  height: 218px;
+    width: 193px;
+    position: absolute;
+    margin-left: 60px;
+    top: 8px;
+  }
+
+  .fix_text {
+      position: absolute;
+    margin-left: 30px;
+    top: 212px;
+  }
+  
+  .fix_text2 {
+  position: absolute;
+    top: 230px;
+    margin-left: 60px;
+  }
+  
+  .fix_text3 {
+      position: absolute;
+    top: 250px;
+    margin-left: 80px;
+  }
+  
+  .fixphoto {
+      position: absolute;
+    height: 171px;
+    width: 710px;
+    top: 0px;
+  }
+  
+  </style>
+
+
+<style>
+  @media only screen and (min-width: 1919px)  {
+ .fixphoto{
+  height: 185px;
+    width: 1284px;
+ }
+  .news {
+  height:974px;
+  }
+  
+  element.style {
+  height:800px;
+  }
+  
+  .history{
+  top:312;
+  width:1285px;
+  height:670px;
+  font-size: 20pt;
+  }
+  
+  .name{
+  top:204;
+  width:1285px;
+  }
+  
+  .photo{
+  height:186px;
+  width:1285px;
+  }
+  .other {
+  height:974px;
+  margin-left:1605px;
+  }
+  
+  h1 {
+  margin-left:300px;
+  }
+  
+  h2 {
+  margin-left:500PX;
+  }
+  
+  
+  
+  }
+  @media only screen and (min-width: 359px)  {
+
+.news {
+top: 1000px;
+position: absolute;
+display: none;
+}
+.director {
+display:none;
+border: 0px;
+}
+.other {
+top: 700px;
+border: 0px;
+}
+
+.photo {
+margin-left: 0px;
+width: 1325px;
+border: 0px;
+}
+.fixphoto {
+width:1325px;
+}
+.history {
+height: 374px;
+    width: 1320px;
+    border: 0px;
+    position: absolute;
+    margin-left: 0;
+    font-size: 26pt;
+	}
+.name {
+border: 0px;
+font-size: 12pt;
+}
+}
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="preloader_malc">
+
+	<div>
+
+		Подождите, идет загрузка сайта ...
+
+	</div>
+
+</div>
+
+<script>
+window.onload = function() {
+
+		setTimeout(function() {
+
+			document.getElementById("preloader_malc").style.display = "none";
+
+		}, 400);
+
+	};
+</script>
+
+  <div class="news">
+  
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+<!-- VK Widget -->
+<div id="vk_groups"><script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 4, height: "640", width: "300", wide: 1}, 190355671);</script></div>
+
+
+
+
+
+
+</div>
+
+  <div class="photo">
+  <p>
+      <a data-fancybox="gallery" data-src="images/01.jpg" >
+       <img class="fixphoto" src="images/01.jpg"></img>
+      </a>
+	  
+	  <a data-fancybox="gallery" data-src="images/02.jpg">
+	   
+	  </a>
+	  <a data-fancybox="gallery" data-src="images/03.jpg">
+	   
+	  </a>
+	  
+	   <a data-fancybox="gallery" data-src="images/04.jpg">
+	   
+	  </a>
+ </p>
+  
+
+</div>
+
+  <div class="name"><h1>Средняя общеобразовательная школа №1</h1></div>
+  <div class="history">
+  Школа №1 г.Балашиха самая старая в городе . За время своего существования наша школа сменила 4 адреса. 
+  
+    <li>Первое здание было основано 1 сентября 1934 года.На улице Советская дом 4, сейчас это здание МФЦ.Первым директором был Леонид Дмитриевич БЕЛКИН.</li>
+    <li> В 1941 году – школа становится военным госпиталем № 2889.</li>
+	<p>
+В годы войны школой руководили ГОРЮНОВА Мария Васильевна и КАГАНСКАЯ Сима Михайловна.
+Выпускники и учителя уходят на фронт. 
+В Великой Отечественной войне погибли 3 учителя и 21 ученик
+</p>
+    <li>Следующее здание школы на улице Советской д.3 было построено в 1938 году. Первым директором в этой школе был Селиверстов Иван Степанович. В школе были оборудованы учебные кабинеты: физики, химии, биологии. Библиотека имела в фонде 3000 книг. В школе были созданы санитарная дружина, кружок связистов, драмкружок и др</li>
+   <li>Следующее здание  находилось на улице Карла Маркса, которая до 1955 года называлась улица Рабочая, дом № 6а (в настоящее время тут находится детский сад «Золотой Петушок»)</li>
+    <li> Последнее здание находится на проспекте Ленина д20 ( там где мы учимся ) открытое в 1975 году  в это время директором была БЕЛЯЕВА Раиса Ивановна. На данный момент директор нашей школы Лебедь Лариса Михайловна которая находится дольше всех на посту директора.</li></div>
+  <div class="other">
+  
+  <div class="director", onclick="location.href='http://google.com';">
+  <img class="director_photo", src="images/lebed.jpg"></img>
+  <h3 class="fix_text">Лебедь Лариса Михайловна</h3>
+  <h4 class="fix_text2">Действующиий директор</h4>
+  <h4 class="fix_text3">МБОУ Школы №1</h4>
+  </div>
+  <div class="presidentschool"></div>
+  <div class="bestpupilsschool"></div>
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+     const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+  infinite: false,
+  Navigation: false,
+});
+
+// Initialise Fancybox
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Carousel: {
+    on: {
+      change: (carousel, to) => {
+        // Sync Carousel slide
+        // ===
+        const $el = Fancybox.getInstance()
+          .getSlide()
+          .$trigger.closest(".carousel__slide");
+
+        const slide = mainCarousel.slides.find((slide) => {
+          return slide.$el === $el;
+        });
+
+        mainCarousel.slideTo(slide.index, {
+          friction: 0,
+        });
+      },
+    },
+  },
+});
+    </script>
+
+  </body>
+</html>
