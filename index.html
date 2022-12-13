@@ -115,7 +115,14 @@
   border:1px solid black;
   position:absolute;
   top:184;
+  
   margin-left:310px;
+  }
+  
+  .phone_text {
+  visibility: hidden;
+  font-family: Beautiful;
+  font-size: 1;
   }
   
   .history {
@@ -180,14 +187,7 @@
     top: 0px;
   }
   
-   #footer {
-    position: fixed; /* Фиксированное положение */
-    left: 0; bottom: 0; /* Левый нижний угол */
-    padding: 10px; /* Поля вокруг текста */
-    background: #39b54a; /* Цвет фона */
-    color: #fff; /* Цвет текста */
-    width: 100%; /* Ширина слоя */
-   }
+ 
   </style>
 
 
@@ -265,23 +265,30 @@ border: 0px;
 }
 
 .fixphoto {
-width:1325px;
+width:345px;
 }
 
 .history {
-height: 374px;
-    width: 1320px;
+height: 351px;
+    width: 365px;
     border: 0px;
     position: absolute;
     margin-left: 0;
-    font-size: 26pt;
+    font-size: 19pt;
 	}
 	
 .name {
-border: 0px;
-font-size: 12pt;
+        border: 0px;
+    font-size: 9pt;
+    margin-left: -25px;
 }
-
+ .phone_text {
+    visibility: visible;
+    font-size: 29px;
+    margin-left: 125px;
+    top: 45px;
+    position: absolute;
+}
 }
 </style>
 
@@ -346,7 +353,7 @@ VK.Widgets.Group("vk_groups", {mode: 4, height: "640", width: "300", wide: 1}, 1
 
 </div>
 
-  <div class="name"><h1>Средняя общеобразовательная школа №1</h1></div>
+  <div class="name"><h1>Средняя общеобразовательная школа №1</h1><div class="phone_text">школа №1</div></div>
   <div class="history">
   Школа №1 г.Балашиха самая старая в городе . За время своего существования наша школа сменила 4 адреса. 
   
