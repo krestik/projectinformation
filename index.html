@@ -1,9 +1,10 @@
 <DOCTYPE html>
 <html>
  <head>
-
+<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon"/>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
@@ -179,6 +180,14 @@
     top: 0px;
   }
   
+   #footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
   </style>
 
 
@@ -392,6 +401,6 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
     </script>
-
+<p style="color:#ffffff;position:absolute;right:0;bottom:-16;margin-bottom:0">&copy 𝓫𝔂 𝓴𝓻𝓻𝓼𝓽 𝓪𝓷𝓭 𝔁𝓽𝓬</p>
   </body>
 </html>
