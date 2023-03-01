@@ -18,8 +18,8 @@
   }
   .btn-11 {
     border: none;
-    background: rgb(251,33,117);
-      background: linear-gradient(0deg, rgb(33, 164, 251) 0%, rgb(73, 157, 235) 100%);
+    
+      background:  url(images/button_photo.png); 
       color: #fff;
       overflow: hidden;
   }
@@ -78,7 +78,7 @@
   .btn-22 {
     border: none;
     background: rgb(251,33,117);
-      background: linear-gradient(0deg, rgb(33, 164, 251) 0%, rgb(73, 157, 235) 100%);
+      background:  url(images/map_school.png); 
       color: #fff;
       overflow: hidden;
   }

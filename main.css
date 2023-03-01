@@ -2,8 +2,9 @@
   
    body {
 
-    background: url(images/1.jpg); 
-	}
+    background:  url(images/1.jpg); 
+	backdrop-filter: blur(2px);
+   }
 	@font-face {
     font-family: Beautiful; /* Гарнитура шрифта */
     src: url(fonts/beautiful.ttf); /* Путь к файлу со шрифтом */
@@ -13,7 +14,7 @@
    font-family: Inter-Bold;
 	src: url(fonts/Inter-Bold.otf);
 	}
-  
+   
 	
 	
    h1 {
