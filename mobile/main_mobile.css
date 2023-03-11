@@ -44,12 +44,12 @@ body {
 	}
     .photo {
         height:170px;
-        width:345px;
+        width:100%;
         border:1px solid black;
     }
     .fixphoto {
         position: absolute;
       height: 170px;
-      width: 345px;
+      width: 100%;
       top: 0px;
     }
