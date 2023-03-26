@@ -5,12 +5,12 @@ body {
    }
 	@font-face {
     font-family: Beautiful; /* Гарнитура шрифта */
-    src: url(fonts/beautiful.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/beautiful.ttf); /* Путь к файлу со шрифтом */
 	 
    }
    @font-face {
    font-family: Inter-Bold;
-	src: url(fonts/Inter-Bold.otf);
+	src: url(../fonts/Inter-Bold.otf);
 	}
 
     #preloader_malc {
@@ -53,3 +53,16 @@ body {
       width: 100%;
       top: 0px;
     }
+	
+	.schoolname {
+		font-family: Beautiful;
+		font-size: 31px;
+		top: 180px;
+		position: absolute;
+	}
+	.history {
+		font-family: Inter-Bold;
+		position: absolute;
+		top: 305;
+	}
+	
