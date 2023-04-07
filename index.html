@@ -1,7 +1,7 @@
 <DOCTYPE html>
   <html>
    <head>
-    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -10,6 +10,7 @@
         href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
       />
     <title>МБОУ Школа N1</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="button.css">
   <!-- Yandex.Metrika counter -->
@@ -215,12 +216,103 @@
       <li> Последнее здание находится на проспекте Ленина д20 ( там где мы учимся ) открытое в 1975 году  в это время директором была БЕЛЯЕВА Раиса Ивановна. На данный момент директор нашей школы Лебедь Лариса Михайловна которая находится дольше всех на посту директора.</li></div>
     <div class="other">
       <div class="presidentschool">
-      
-        <button class="custom-btn btn-11">"История эмблемы"<div class="dot"></div></button> 
+        <style>
+    .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: -60px;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Анимация */
+.modal-content {
+    animation-name: explodeIn;
+    animation-duration: 0.6s;
+}
+
+@keyframes explodeIn {
+    from {transform: scale(0); opacity:0;}
+    to {transform: scale(1); opacity:1;}
+}
+.oglavlenie {
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Inter-Bold;
+}
+.paragraph1{
+  top: 1px;
+  font-family: Inter-Bold;
+}
+.paragraph2{
+  font-family: Inter-Bold;
+}
+.paragraph3{
+  font-family: Inter-Bold;
+}
+.nigger{
+  border-radius: 10px;
+}
+          </style>
+        <button class="custom-btn btn-11" onclick="document.getElementById('myModal').style.display='block'">"История эмблемы"<div class="dot"></div></button> 
+        
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="oglavlenie">История герба школы №1.</div>
+              <p></p>
+                <div class="paragraph1" align="center">К 50 летию школы, выпускники 1983 года организовали конкурс эскиза герба школы. Было много вариантов, но идея не воплотилась в жизнь.</div>
+                <p></p>
+                <div class="paragraph2" align="center">К идее создания герба вернулись к 70-летнему юбилею , по инициативе директора школы Лебедь Ларисы Михайловны. Был объявлен очередной конкурс. Выбрали оптимальный вариант, и в школе появился герб. </div>
+                <p></p>
+                <div class="paragraph3" align="center">В начале, это был значок, но вариант оказался не надежным, часто ломался и терялся. Тогда было принято решение, что герб будет в виде вышитой эмблемы. Сначала герб был в форме геральдического щита с изображением глобуса, дерева, и очертаний здания школы. Затем его видоизменили и он стал представлять собой круг с изображением в нем развернутой книги на одной странице который изображен первоначальный вид герба на другой год основания школы, перо, книга обрамлена с одной стороны изогнутой золотой ветвью.</div>
+               <p></p>
+               <div class="emblemaphoto"><img src="images/emblema.png" class="nigger"></div>
+              </p>
+          </div>
+          
+          </div>
+          <script>
+           // Получаем модальное окно
+var modal = document.getElementById('myModal');
+
+// Получаем элемент <span>, который закрывает модальное окно
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального окна, закройте его
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+            </script>
+        
       </div>
       <div class="bestpupilsschool">
-  
+        <a data-fancybox="mapofschool" data-src="images/mappingschool.jpg">
         <button class="custom-btn1 btn-22"><div class="dot"></div></button> 
+        </a>
       </div>
     <div class="director", onclick="location.href='http://google.com';">
     <img class="director_photo", src="images/lebed.jpg"></img>
@@ -259,7 +351,32 @@
       },
     },
   });
-      </script>
+
   
+      </script>
+  <script>
+    Fancybox.bind('[data-fancybox="mapofschool"]', {
+    Carousel: {
+      on: {
+        change: (carousel, to) => {
+          // Sync Carousel slide
+          // ===
+          const $el = Fancybox.getInstance()
+            .getSlide()
+            .$trigger.closest(".carousel__slide");
+  
+          const slide = mainCarousel.slides.find((slide) => {
+            return slide.$el === $el;
+          });
+  
+          mainCarousel.slideTo(slide.index, {
+            friction: 0,
+          });
+        },
+      },
+    },
+  });
+
+  </script>
     </body>
   </html>
