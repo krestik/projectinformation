@@ -13,6 +13,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="button.css">
+    <script src="easter_eggg.js"></script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -266,6 +267,21 @@
 .nigger{
   border-radius: 10px;
 }
+.emblemaphoto{
+  position: relative;
+  right: 220px;
+}
+figcaption {
+  font-family: Inter-Bold;
+}
+.spiridon {
+  border-radius: 10px;
+}
+.emblemanewlm {
+  position: relative;
+  left: 450px;
+  top: -268px;
+}
           </style>
         <button class="custom-btn btn-11" onclick="document.getElementById('myModal').style.display='block'">"История эмблемы"<div class="dot"></div></button> 
         
@@ -281,7 +297,8 @@
                 <p></p>
                 <div class="paragraph3" align="center">В начале, это был значок, но вариант оказался не надежным, часто ломался и терялся. Тогда было принято решение, что герб будет в виде вышитой эмблемы. Сначала герб был в форме геральдического щита с изображением глобуса, дерева, и очертаний здания школы. Затем его видоизменили и он стал представлять собой круг с изображением в нем развернутой книги на одной странице который изображен первоначальный вид герба на другой год основания школы, перо, книга обрамлена с одной стороны изогнутой золотой ветвью.</div>
                <p></p>
-               <div class="emblemaphoto"><img src="images/emblema.png" class="nigger"></div>
+               <div class="emblemaphoto" align="center"><img src="images/emblema.png" class="nigger"><figcaption>Старая эмблема</figcaption><div class="emblemanewlm" align="center"><img src="images/emblemanew.png" class="spiridon"><figcaption>Новая эмблема</figcaption></div></div>
+               
               </p>
           </div>
           
@@ -378,5 +395,69 @@ window.onclick = function(event) {
   });
 
   </script>
+
+<div class="pashalka"></div>
+<style>
+  .pashalka {
+    cursor: pointer;
+    position: center;
+    
+    border:1px solid black;
+    height: 10px;
+    width: 10px;
+  }
+  </style>
+
+<!-- Добавьте изображение Пасхального кролика на страницу и скройте его с помощью CSS -->
+<img id="easter-bunny" src="images/easter_egg.png" style="display:none">
+
+<script>
+  // Получите элемент правого верхнего угла страницы
+  var topRightCorner = document.querySelector('.pashalka'); // замените #top-right-corner на соответствующий идентификатор вашего элемента
+
+  // Определите переменную для подсчета количества кликов
+  var clickCount = 0;
+
+  // Добавьте обработчик событий клика на элемент правого верхнего угла
+  topRightCorner.addEventListener('click', function() {
+    // Увеличивайте количество кликов при каждом клике на элемент
+    clickCount++;
+
+    // Если нажатия были два, запускайте пасхалку
+    if (clickCount === 2) {
+      // Сбросьте количество кликов
+      clickCount = 0;
+
+      // Получите элемент изображения Пасхального кролика
+      var easterBunny = document.querySelector('#easter-bunny');
+
+      // Отобразите изображение на странице и задайте начальные стили
+      easterBunny.style.display = 'block';
+      easterBunny.style.position = 'absolute';
+      easterBunny.style.top = '50%'; // половина высоты экрана
+      easterBunny.style.left = '50%'; // половина ширины экрана
+      easterBunny.style.opacity = '1';
+
+      // Создайте анимацию для Пасхального кролика
+      var bunnyAnimation = easterBunny.animate([
+        { top: '50%', transform: 'translate(-50%, -50%)' },
+        { top: '30%', transform: 'translate(-50%, -50%)' },
+        { top: '50%', transform: 'translate(-50%, -50%)' }
+      ], {
+        duration: 2000,
+        iterations: 1
+      });
+
+      // После завершения анимации скройте изображение
+      bunnyAnimation.onfinish = function() {
+        easterBunny.style.opacity = '0';
+        setTimeout(function() {
+          easterBunny.style.display = 'none';
+        }, 500); // задержка перед скрытием изображения
+      };
+    }
+  });
+</script>
+
     </body>
   </html>
