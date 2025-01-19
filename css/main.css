@@ -151,3 +151,17 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
+
+.footer {
+    background: rgba(0, 123, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer .container {
+    background: transparent;
+    box-shadow: none;
+}
