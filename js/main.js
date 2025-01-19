@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             button.addEventListener('click', selectAnswer);
             answersElement.appendChild(button);
         });
-        nextButton.style.display = 'none'; // Скрываем кнопку "Дальше" до выбора ответа
+        nextButton.style.display = 'none';
     }
 
     function selectAnswer(e) {
@@ -48,17 +48,16 @@ document.addEventListener("DOMContentLoaded", function() {
             selectedButton.classList.add('btn-danger');
         }
         Array.from(answersElement.children).forEach(button => {
-            button.disabled = true; // Блокируем все кнопки после выбора ответа
+            button.disabled = true;
             if (button.textContent === questions[currentQuestionIndex].correctAnswer) {
                 button.classList.remove('btn-outline-primary');
                 button.classList.add('btn-success');
             }
         });
-        nextButton.style.display = 'block'; // Показываем кнопку "Дальше"
+        nextButton.style.display = 'block';
     }
 
     function showResult() {
-        // Скрываем контейнер с вопросами и показываем результат
         quizContainer.style.display = 'none';
         resultElement.style.display = 'block';
         correctAnswersElement.textContent = correctAnswers;
@@ -68,13 +67,11 @@ document.addEventListener("DOMContentLoaded", function() {
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
-            showQuestion(); // Показываем следующий вопрос
+            showQuestion();
         } else {
-            showResult(); // Показываем результат, если вопросы закончились
+            showResult();
         }
     });
-
-    // Инициализация первого вопроса
     showQuestion();
 });
 
