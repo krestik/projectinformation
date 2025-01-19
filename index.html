@@ -1,463 +1,226 @@
-<DOCTYPE html>
-  <html>
-   <head>
-    
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-      />
-    <title>МБОУ Школа N1</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="button.css">
-    <script src="easter_eggg.js"></script>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  
-    ym(92767619, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/92767619" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G10WNKJ9D1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-G10WNKJ9D1');
-  </script>
-  <script>
-    if(screen.width <=800){
-      location.href="mobile/mobile.html"
-    }
-  </script>
-  <style>
-    @media only screen and (min-width: 1919px)  {
-   .fixphoto{
-    height: 185px;
-      width: 1284px;
-   }
-    .news {
-    height:974px;
-    }
-    
-    element.style {
-    height:800px;
-    }
-    
-    .history{
-    top:312;
-    width:1285px;
-    height:670px;
-    font-size: 20pt;
-    }
-    
-    .name{
-    top:204;
-    width:1285px;
-    }
-    
-    .photo{
-    height:186px;
-    width:1285px;
-    }
-    .other {
-    height:974px;
-    margin-left:1605px;
-    }
-    
-    h1 {
-    margin-left:300px;
-    }
-    
-    h2 {
-    margin-left:500PX;
-    }
-   .presidentschool {
-    top: 445px;
-    height: 263px;
-   }
-  
-   .custom-btn {
-    height: 263px;
-   }
-    .bestpupilsschool {
-      
-      height: 263px;
-     
-      top: 712px;
-  }
-  .custom-btn1 {
-      /* top: 33; */
-      width: 299px;
-      height: 263;
-    
-  }
-  .director{
-  height: 445px;
-      width: 300px;
-      
-    }
-  .director_photo{
-    height: 325px;
-  }
-  .fix_text {
-    top: 320px;
-  }
-  
-  .fix_text2 {
-    top: 345px;
-  }
-  
-  .fix_text3 {
-    top: 370px;
-  }
-  
-  .btn-11 {
-  
-  background-image: url(images/button_photo1.png);
-  }
-  
-  .btn-22 {
-  background-image: url(images/map_school1.png);
-  }
-    }
-    </style>
-  
-  
-    </head>
-   
-    <body>
-    
-    <div id="preloader_malc">
-  
-    <div>
-  
-      Подождите, идет загрузка сайта ...
-  
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МБОУ Школа №1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/favicon.png" alt="Логотип" width="30" height="30" class="d-inline-block align-top">
+                Школа №1
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">История</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#igory">Игорь Цыганков</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#emblem">Эмблема</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map">Карта зданий</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quiz">Тестирование</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#director">Директор</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Карусель с фотографиями школы -->
+    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="images/01.jpg" data-fancybox="gallery">
+                    <img src="images/01.jpg" class="d-block w-100" alt="Фото школы 1">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="images/02.jpg" data-fancybox="gallery">
+                    <img src="images/02.jpg" class="d-block w-100" alt="Фото школы 2">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="images/03.jpg" data-fancybox="gallery">
+                    <img src="images/03.jpg" class="d-block w-100" alt="Фото школы 3">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="images/04.jpg" data-fancybox="gallery">
+                    <img src="images/04.jpg" class="d-block w-100" alt="Фото школы 4">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
     </div>
-  
-  </div>
-  
-  <script>
-  window.onload = function() {
-  
-      setTimeout(function() {
-  
-        document.getElementById("preloader_malc").style.display = "none";
-  
-      }, 400);
-  
-    };
-  </script>
-  
-    <div class="news">
-    
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-  
-  <!-- VK Widget -->
-  <div id="vk_groups"><script type="text/javascript">
-  VK.Widgets.Group("vk_groups", {mode: 4, height: "640", width: "300", wide: 1}, 190355671);</script></div>
-  
-  
-  
-  
-  
-  
-  </div>
-  
-    <div class="photo">
-    <p>
-        <a data-fancybox="gallery" data-src="images/01.jpg" >
-         <img class="fixphoto" src="images/01.jpg"></img>
-        </a>
-      
-      <a data-fancybox="gallery" data-src="images/02.jpg">
-       
-      </a>
-      <a data-fancybox="gallery" data-src="images/03.jpg">
-       
-      </a>
-      
-       <a data-fancybox="gallery" data-src="images/04.jpg">
-       
-      </a>
-   </p>
-    
-  
-  </div>
-  
-    <div class="name"><h1 class="fix_mobileadapt">Средняя общеобразовательная школа №1</h1><div class="phone_text">Средняя общеобразовательная школа №1</div></div>
-    <div class="history">
-    Школа №1 г.Балашиха самая старая в городе . За время своего существования наша школа сменила 4 адреса. 
-    
-      <li>Первое здание было основано 1 сентября 1934 года.На улице Советская дом 4, сейчас это здание МФЦ.Первым директором был Леонид Дмитриевич БЕЛКИН.</li>
-      <li> В 1941 году – школа становится военным госпиталем № 2889.</li>
-    <p>
-  В годы войны школой руководили ГОРЮНОВА Мария Васильевна и КАГАНСКАЯ Сима Михайловна.
-  Выпускники и учителя уходят на фронт. 
-  В Великой Отечественной войне погибли 3 учителя и 21 ученик
-  </p>
-      <li>Следующее здание школы на улице Советской д.3 было построено в 1938 году. Первым директором в этой школе был Селиверстов Иван Степанович. В школе были оборудованы учебные кабинеты: физики, химии, биологии. Библиотека имела в фонде 3000 книг. В школе были созданы санитарная дружина, кружок связистов, драмкружок и др</li>
-     <li>Следующее здание  находилось на улице Карла Маркса, которая до 1955 года называлась улица Рабочая, дом № 6а (в настоящее время тут находится детский сад «Золотой Петушок»)</li>
-      <li> Последнее здание находится на проспекте Ленина д20 ( там где мы учимся ) открытое в 1975 году  в это время директором была БЕЛЯЕВА Раиса Ивановна. На данный момент директор нашей школы Лебедь Лариса Михайловна которая находится дольше всех на посту директора.</li></div>
-    <div class="other">
-      <div class="presidentschool">
-        <style>
-    .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 0;
-  top: -60px;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Анимация */
-.modal-content {
-    animation-name: explodeIn;
-    animation-duration: 0.6s;
-}
-
-@keyframes explodeIn {
-    from {transform: scale(0); opacity:0;}
-    to {transform: scale(1); opacity:1;}
-}
-.oglavlenie {
-  position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: Inter-Bold;
-}
-.paragraph1{
-  top: 1px;
-  font-family: Inter-Bold;
-}
-.paragraph2{
-  font-family: Inter-Bold;
-}
-.paragraph3{
-  font-family: Inter-Bold;
-}
-.nigger{
-  border-radius: 10px;
-}
-.emblemaphoto{
-  position: relative;
-  right: 220px;
-}
-figcaption {
-  font-family: Inter-Bold;
-}
-.spiridon {
-  border-radius: 10px;
-}
-.emblemanewlm {
-  position: relative;
-  left: 450px;
-  top: -268px;
-}
-          </style>
-        <button class="custom-btn btn-11" onclick="document.getElementById('myModal').style.display='block'">"История эмблемы"<div class="dot"></div></button> 
-        
-        <div id="myModal" class="modal">
-
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <div class="oglavlenie">История герба школы №1.</div>
-              <p></p>
-                <div class="paragraph1" align="center">К 50 летию школы, выпускники 1983 года организовали конкурс эскиза герба школы. Было много вариантов, но идея не воплотилась в жизнь.</div>
-                <p></p>
-                <div class="paragraph2" align="center">К идее создания герба вернулись к 70-летнему юбилею , по инициативе директора школы Лебедь Ларисы Михайловны. Был объявлен очередной конкурс. Выбрали оптимальный вариант, и в школе появился герб. </div>
-                <p></p>
-                <div class="paragraph3" align="center">В начале, это был значок, но вариант оказался не надежным, часто ломался и терялся. Тогда было принято решение, что герб будет в виде вышитой эмблемы. Сначала герб был в форме геральдического щита с изображением глобуса, дерева, и очертаний здания школы. Затем его видоизменили и он стал представлять собой круг с изображением в нем развернутой книги на одной странице который изображен первоначальный вид герба на другой год основания школы, перо, книга обрамлена с одной стороны изогнутой золотой ветвью.</div>
-               <p></p>
-               <div class="emblemaphoto" align="center"><img src="images/emblema.png" class="nigger"><figcaption>Старая эмблема</figcaption><div class="emblemanewlm" align="center"><img src="images/emblemanew.png" class="spiridon"><figcaption>Новая эмблема</figcaption></div></div>
-               
-              </p>
-          </div>
-          
-          </div>
-          <script>
-           // Получаем модальное окно
-var modal = document.getElementById('myModal');
-
-// Получаем элемент <span>, который закрывает модальное окно
-var span = document.getElementsByClassName("close")[0];
-
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Когда пользователь щелкает в любом месте за пределами модального окна, закройте его
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-            </script>
-        
-      </div>
-      <div class="bestpupilsschool">
-        <a data-fancybox="mapofschool" data-src="images/mappingschool.jpg">
-        <button class="custom-btn1 btn-22"><div class="dot"></div></button> 
-        </a>
-      </div>
-    <div class="director", onclick="location.href='http://google.com';">
-    <img class="director_photo", src="images/lebed.jpg"></img>
-    <h3 class="fix_text">Лебедь Лариса Михайловна</h3>
-    <h4 class="fix_text2">Действующиий директор</h4>
-    <h4 class="fix_text3">МБОУ Школы №1</h4>
+    <!-- Название школы по центру -->
+    <div class="container text-center mt-4">
+        <h1>Средняя общеобразовательная школа №1</h1>
     </div>
-    
-    </div>
-     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-      <script>
-       const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
-    infinite: false,
-    Navigation: false,
-  });
-  
-  // Initialise Fancybox
-  Fancybox.bind('[data-fancybox="gallery"]', {
-    Carousel: {
-      on: {
-        change: (carousel, to) => {
-          // Sync Carousel slide
-          // ===
-          const $el = Fancybox.getInstance()
-            .getSlide()
-            .$trigger.closest(".carousel__slide");
-  
-          const slide = mainCarousel.slides.find((slide) => {
-            return slide.$el === $el;
-          });
-  
-          mainCarousel.slideTo(slide.index, {
-            friction: 0,
-          });
-        },
-      },
-    },
-  });
 
-  
-      </script>
-  <script>
-    Fancybox.bind('[data-fancybox="mapofschool"]', {
-    Carousel: {
-      on: {
-        change: (carousel, to) => {
-          // Sync Carousel slide
-          // ===
-          const $el = Fancybox.getInstance()
-            .getSlide()
-            .$trigger.closest(".carousel__slide");
-  
-          const slide = mainCarousel.slides.find((slide) => {
-            return slide.$el === $el;
-          });
-  
-          mainCarousel.slideTo(slide.index, {
-            friction: 0,
-          });
-        },
-      },
-    },
-  });
+    <!-- Основной контент -->
+    <div class="container mt-4">
+        <!-- История школы -->
+        <section id="history" class="mt-5">
+            <h2 class="text-center">История школы</h2>
+            <div class="section-content">
+                <p>Школа №1 г. Балашиха — самая старая в городе. За время своего существования школа сменила 4 адреса.</p>
+                <ul>
+                    <li>Первое здание было основано 1 сентября 1934 года на улице Советская, дом 4. Сейчас это здание МФЦ. Первым директором был Леонид Дмитриевич Белкин.</li>
+                    <li>В 1941 году школа стала военным госпиталем № 2889.</li>
+                    <li>Следующее здание на улице Советской, дом 3, было построено в 1938 году.</li>
+                    <li>Последнее здание на проспекте Ленина, дом 20, открыто в 1975 году.</li>
+                </ul>
+            </div>
+        </section>
 
-  </script>
+        <!-- История про Игоря Цыганкова -->
+        <section id="igory" class="mt-5">
+            <h2 class="text-center">История про Игоря Цыганкова</h2>
+            <div class="section-content">
+                <p>Игорь Цыганков родился 23 декабря 1964 года в Балашихе. В СПТУ №75 получил специальность электрослесаря. На протяжении всех трех лет обучения его фотография постоянно находилась на Доске почета. За хорошую учебу и отличное поведение Игоря поощряли поездками в разные города страны. Получив специальность электрослесаря четвертого разряда, он пошел работать на Балашихинский литейно-механический завод, где также зарекомендовал себя с самой лучшей стороны. В 1983 году Игорь Цыганков был призван в армию. Первые три месяца он проходил службу в учебном подразделении в Туркмении, затем был направлен в Афганистан. Служил старшим мотострелком в воинской части №24785 (395-й мотострелковый полк 201-й мотострелковой дивизии), дислоцировавшейся в центре провинции Баглан — городе Пули-Хумри на севере Афганистана. В декабре 1984-го Игорь отметил двадцатилетие, а ровно через месяц — 23 января 1985 года — геройски погиб в бою в районе населенного пункта Доши провинции Баглан. За свой подвиг он посмертно был награжден орденом Красной Звезды и медалью «Воину-интернационалисту от благодарного афганского народа».</p>
+                <p>В память о нем в 2005 году была открыта Мемориальная доска на здании школы.</p>
+            </div>
+        </section>
 
-<div class="pashalka"></div>
-<style>
-  .pashalka {
-    cursor: pointer;
-    position: center;
-    
-    border:1px solid black;
-    height: 10px;
-    width: 10px;
-  }
-  </style>
+        <!-- История эмблемы -->
+        <section id="emblem" class="mt-5 text-center">
+            <h2>История эмблемы</h2>
+            <p>Эмблема школы была создана к 70-летнему юбилею. Она представляет собой круг с изображением книги, пера и золотой ветви.</p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <a href="images/emblema.png" data-fancybox="emblem">
+                        <img src="images/emblema.png" class="img-fluid rounded" alt="Старая эмблема">
+                    </a>
+                    <p class="mt-2">Старая эмблема</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="images/emblemanew.png" data-fancybox="emblem">
+                        <img src="images/emblemanew.png" class="img-fluid rounded" alt="Новая эмблема">
+                    </a>
+                    <p class="mt-2">Новая эмблема</p>
+                </div>
+            </div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emblemModal">Подробнее об истории эмблемы</button>
+        </section>
+        <!-- Карта зданий -->
+        <section id="map" class="mt-5 text-center">
+            <h2>Карта зданий</h2>
+            <p>На карте отмечены все здания, в которых располагалась школа за время своего существования.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <a href="images/mappingschool.jpg" data-fancybox="map">
+                        <img src="images/mappingschool.jpg" class="img-fluid rounded" alt="Карта зданий школы">
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<!-- Добавьте изображение Пасхального кролика на страницу и скройте его с помощью CSS -->
-<img id="easter-bunny" src="images/easter_egg.png" style="display:none">
+        <!-- Секция тестирования -->
+        <section id="quiz" class="mt-5 text-center">
+            <h2>Тестирование знаний</h2>
+            <div id="quiz-container">
+                <div id="question-container" class="mb-3">
+                    <p id="question"></p>
+                    <div id="answers" class="d-flex flex-column align-items-center">
+                        <!-- Ответы будут добавлены с помощью JavaScript -->
+                    </div>
+                </div>
+                <button id="next-button" class="btn btn-primary" style="display: none;">Дальше</button>
+                <div id="result" class="mt-3" style="display: none;">
+                    <p>Вы ответили правильно на <span id="correct-answers">0</span> из <span id="total-questions">0</span> вопросов.</p>
+                </div>
+            </div>
+        </section>
 
-<script>
-  // Получите элемент правого верхнего угла страницы
-  var topRightCorner = document.querySelector('.pashalka'); // замените #top-right-corner на соответствующий идентификатор вашего элемента
+        <!-- Директор школы -->
+        <section id="director" class="mt-5 text-center">
+            <h2>Директор школы</h2>
+            <div class="card director-card">
+                <a href="images/lebed.jpg" data-fancybox="director">
+                    <img src="images/lebed.jpg" class="card-img-top" alt="Директор школы">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Лебедь Лариса Михайловна</h5>
+                    <p class="card-text">Действующий директор МБОУ Школы №1.</p>
+                </div>
+            </div>
+            <!-- Виджет VK с отступом -->
+            <div id="vk_groups" class="mt-4"></div>
+        </section>
 
-  // Определите переменную для подсчета количества кликов
-  var clickCount = 0;
+        <!-- Модальное окно для истории эмблемы -->
+        <div class="modal fade" id="emblemModal" tabindex="-1" aria-labelledby="emblemModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="emblemModalLabel">История эмблемы школы</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Эмблема школы была создана к 70-летнему юбилею. Она представляет собой круг с изображением книги, пера и золотой ветви.</p>
+                        <p>К 50-летию школы выпускники 1983 года организовали конкурс эскиза герба школы. Было много вариантов, но идея не воплотилась в жизнь.</p>
+                        <p>К идее создания герба вернулись к 70-летнему юбилею по инициативе директора школы Лебедь Лариса Михайловна. Был объявлен очередной конкурс. Выбрали оптимальный вариант, и в школе появился герб.</p>
+                        <p>В начале это был значок, но вариант оказался ненадежным, часто ломался и терялся. Тогда было принято решение, что герб будет в виде вышитой эмблемы.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  // Добавьте обработчик событий клика на элемент правого верхнего угла
-  topRightCorner.addEventListener('click', function() {
-    // Увеличивайте количество кликов при каждом клике на элемент
-    clickCount++;
 
-    // Если нажатия были два, запускайте пасхалку
-    if (clickCount === 2) {
-      // Сбросьте количество кликов
-      clickCount = 0;
 
-      // Получите элемент изображения Пасхального кролика
-      var easterBunny = document.querySelector('#easter-bunny');
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+        <script type="text/javascript">
+            VK.Widgets.Group("vk_groups", {
+                mode: 4,
+                /* Режим отображения */
+                height: "300",
+                /* Высота виджета */
+                width: "auto",
+                /* Автоматическая ширина */
+                wide: 1 /* Адаптивный дизайн */
+            }, 190355671); /* ID вашей группы */
+        </script>
 
-      // Отобразите изображение на странице и задайте начальные стили
-      easterBunny.style.display = 'block';
-      easterBunny.style.position = 'absolute';
-      easterBunny.style.top = '50%'; // половина высоты экрана
-      easterBunny.style.left = '50%'; // половина ширины экрана
-      easterBunny.style.opacity = '1';
 
-      // Создайте анимацию для Пасхального кролика
-      var bunnyAnimation = easterBunny.animate([
-        { top: '50%', transform: 'translate(-50%, -50%)' },
-        { top: '30%', transform: 'translate(-50%, -50%)' },
-        { top: '50%', transform: 'translate(-50%, -50%)' }
-      ], {
-        duration: 2000,
-        iterations: 1
-      });
+        <!-- Подключение Bootstrap JS и Fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script src="js/main.js"></script>
+</body>
 
-      // После завершения анимации скройте изображение
-      bunnyAnimation.onfinish = function() {
-        easterBunny.style.opacity = '0';
-        setTimeout(function() {
-          easterBunny.style.display = 'none';
-        }, 500); // задержка перед скрытием изображения
-      };
-    }
-  });
-</script>
-
-    </body>
-  </html>
+</html>
